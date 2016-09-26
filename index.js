@@ -16,6 +16,8 @@ function Zenodo(user, key, endpoint) {
   this.user = user
   this.key = key
   this.endpoint = endpoint || 'https://zenodo.org/api/'
+  if (!user) throw new Error('Missing Required Username')
+  if (!key) throw new Error('Missing Required API key')
 }
 
 module.exports=Zenodo
