@@ -14,6 +14,6 @@ describe ("API object", function () {
   })
   it("correctly handles passing the sandbox endoint", function () {
     var zenodo = new Zenodo('testuser', 'TESTAPIKEY', 'https://sandbox.zenodo.org/api/')
-
+    expect(zenodo.endpoint).to.equal('https://sandbox.zenodo.org/api/')
   })
 })
