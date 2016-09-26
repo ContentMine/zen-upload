@@ -9,6 +9,9 @@ var endpointTestUrl = "https://sandbox.zenodo.org/api"
 
 //we should then check these are correct
 //and then we should push the information to zenodo
- 
 
-exports['default']=zen-upload
+function Zenodo() {
+
+}
+
+module.exports=Zenodo
